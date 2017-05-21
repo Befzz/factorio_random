@@ -1,6 +1,15 @@
--- A part of tag.lua
+-- A part of band.lua
+-- Feel free to edit.
 
 return {
+
+["to_print"] = {
+  "%name now in a [%band] band.",
+  "%name has joined [%band] band.",
+  "%name is supporting [%band] band."  
+},
+
+["roles"] = {
   ["Trooper"] = {
     "item/tank",
     "item/exoskeleton-equipment",
@@ -13,6 +22,10 @@ return {
       "If the facts don't fit the theory, change the facts.",
       "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail.",
       "There's a fine line between genius and insanity. I have erased this line."
+    },
+    verbs = {
+      "strengthened",
+      "reinforced"
     }
   },
   ["Security"] = {
@@ -29,7 +42,12 @@ return {
       "Robocop!", 
       "Attack is the best form of defense.",
       "Only the insecure strive for security."
-      }
+    },
+    verbs = {
+      "strengthened",
+      "enhanced",
+      "reinforced"
+    } 
   },
   ["Resources"] = {
     "item/steel-axe",
@@ -39,7 +57,11 @@ return {
     tooltip = {
       "Mine or not to mine", 
       "The nation behaves well if it treats the natural resources as assets which\n it must turn over to the next generation increased, and not impaired, in value."
-      }
+    },
+    verbs = {
+      "enriched",
+      "smelted"
+    }
   },
   ["Production"] = {
     "item/assembling-machine-1",
@@ -51,7 +73,10 @@ return {
       "When every physical and mental resources is focused, one's power to solve a problem multiplies tremendously.",
       "The production of too many useful things results in too many useless people. ",
       "Everything must be made as simple as possible. But not simpler."
-      }
+    },
+    verbs = {
+      "enhanced"
+    } 
   },
   ["Science"] = {
     "item/science-pack-1",
@@ -66,7 +91,10 @@ return {
       "If we knew what it was we were doing, it would not be called research, would it?",
       "Somewhere, something incredible is waiting to be known.",
       "I'm sure the universe is full of intelligent life. It's just been too intelligent to come here."
-    }
+    },
+    verbs = {
+      "advanced"
+    } 
   },
   ["Spaghetti"] = {
     "item/transport-belt",
@@ -79,8 +107,18 @@ return {
     tooltip = {
       "Naturally italian",
       '"A long, thin, cylindrical, solid pasta"(wiki)'
-      }
-    
+    },
+    verbs = {
+      "perfected",
+      "chaosed",
+      "hodgepodged",
+      "noodled",
+      "macaronied",
+      "pastaed",
+      "seasoned",
+      "belted"
+    } 
+      
   },
   ["Trains"] = {
     "entity/curved-rail",
@@ -93,7 +131,11 @@ return {
       "Ch, ch, choooo!",
       "The only way of catching a train I have ever discovered is to miss the train before. ",
       "If a trainstation is where the train stops, what's a workstation...?"
-      }
+    },
+    verbs = {
+      "expanded",
+      "extended"
+    } 
   },
   ["Powah!"] = {
     "item/steam-turbine",
@@ -109,7 +151,11 @@ return {
       "Power Overwhelming!!!111",
       "Its Over 9000!!!",
       '"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration." (Tesla)'
-      }
+    },
+    verbs = {
+      "amplified",
+      "intensified"
+    }
   },
   ["Lurker"] = {
     "item/night-vision-equipment",
@@ -129,7 +175,12 @@ return {
       "I am an owl, bird of the night. I see everything. I know everything.",
       "A day without sunshine is like, you know, night.",
       "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
-      }
+    },
+    verbs = {
+      "lurked",
+      "noned",
+      "nothinged"
+    }
   },
   ["Oil"] = {
     "item/storage-tank",
@@ -149,6 +200,10 @@ return {
       "Naturally occurring, yellow-to-black liquid found in geological formations beneath the Earth's surface, which is commonly refined into various types of fuels.",
       "Components of petroleum are separated using a technique called fractional distillation.",
       "The petroleum industry generally classifies crude oil by the geographic location it is produced in (e.g. West Texas Intermediate, Brent, or Oman), its API gravity (an oil industry measure of density), and its sulfur content."
+    },
+    verbs = {
+      "lubricated",
+      "sulfured"
     }
   },
   ["Cat"] = {
@@ -160,7 +215,12 @@ return {
       "Cats don't like change without their consent.",
       "Heard melodies are sweet, but those unheard, are sweeter",
       "God does not play dice with the universe"
-    }
+    },
+    verbs = {
+      "mewed",
+      "meowed",
+      "miaowed"
+    } 
   },
   ["Dog"] = {
     "entity/small-biter",
@@ -173,6 +233,10 @@ return {
       "It's not the size of the dog in the fight, it's the size of the fight in the dog.",
       "When what you want is a relationship, and not a person, get a dog",
       "A dog has one aim in life... to bestow his heart."
-      }
+    },
+    verbs = {
+      "woofed"
+    }
   }
+}
 }
